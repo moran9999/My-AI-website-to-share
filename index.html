@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>人工智能·畅想未来</title>
+<!--网页图标-->
+<link rel ="icon" href="../img/icon.png">
+<!--引入全局样式-->
+<link rel="stylesheet" href="../style/common.css">
+<!--引入首页样式-->
+<link rel="stylesheet" href="../style/index0.css">	
+    <style>
+	.shell{
+			width: 25%;
+			height: 490px;
+			display:flex;/*弹性布局*/
+		}
+		.box{			
+			overflow: hidden;
+			transition: .5s;
+			margin: 10px 10px;
+			box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+			border-radius: 20px;
+			border: 3.5px solid #45f3ff;
+			background-color:#1C1C1E;
+			filter: opacity(0.9);
+		}
+		.box>img{
+			width: 200%;
+			height: 85%;
+			object-fit: cover;
+			transition: .5s;
+        }
+		.box>span{
+			font: 25px '黑体';
+			text-align: center;
+			height: 15%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #FFFFFF;
+			text-shadow: 1px 1px 5px black, 2px 2px 20px #88DCEC, 0 0 10px blue;
+			
+        }
+		.box:hover{
+			flex-basis: 100%;
+        }
+		.shell:hover{
+			flex-basis: 100%;
+        }
+		.box:hover>img{
+			width: 100%;
+			height: 100%;
+		}
+		.shell:hover>img{
+			width: 100%;
+			height: 100%;
+		}
+		h2,span{
+			text-shadow: 1px 1px 5px black, 5px 5px 20px #88DCEC, 0 0 10px #88DCEC;
+		}
+		#footer{
+			background-color:#000000;
+			color: white;
+			clear: both;
+			text-align:center;
+			padding: 5px;
+		}
+    </style>
+</head>
+
+<body>
+    <!--头部开始-->
+	<div class="header">		
+		<img src="../img/logo1.png" height="70">
+	</div>
+	<!--头部结束-->
+	<!--导航开始-->
+	<div class="nav">
+		<div class="wrap">
+			<ul>
+				<li class="active"><a href="index0.html">&ensp;网站首页</a></li>
+				<li><a href="index1.html">&ensp;简单介绍</a></li>
+				<li><a href="index2.html">&ensp;成果应用</a></li>
+				<li><a href="index3.html">&ensp;衍生作品</a></li>
+				<li>
+					<a href="index4.html">&ensp;其他信息</a>
+				       <div class="nav-list">
+					       <a href="https://space.bilibili.com/673540924?spm_id_from=333.1007.0.0" target="_blank">&ensp;作者B站</a>
+				       </div>				
+				</li>
+			</ul>
+            <!--搜索框-->
+			<div class="search">
+					<input class="search-text" type="text" placeholder="输入......" name="search">
+					<a href="https://www.baidu.com/s" class="search-button">
+						<img src="../img/搜索_search (1).png" />
+					</a>
+			</div>
+			 <!--登录-->
+			<a href="signin.html" class="login-button" target="_blank">
+				<img src="../img/人员_people.png" alt="" />
+			</a>
+		</div>
+	</div>		 
+	<!--导航结束-->
+	<!--主体开始-->
+	<div class="container">
+		<!--走进人工智能开始-->
+		<div class="start01">
+				<h2>人工智能</h2>
+				<span>将指引我们去向何方？</span>
+		</div>
+	    <!--手风琴效果-->
+		<div class="start02">
+			<div class="shell">
+				<div class="box">
+					<img src="../img/re/ernie-vilg3 (2).png">
+					<span>智能？？？</span>
+				</div>
+			</div>
+			<div class="shell">
+				<div class="box">
+					<img src="../img/re/ernie-vilg2 (5).png">
+					<span>方便？？？</span>
+				</div>
+			</div>
+			<div class="shell">
+				<div class="box">
+					<img src="../img/re/ernie-vilg1 (6).png">
+					<span>取代？？？</span>
+				</div>
+			</div>
+			<div class="shell">
+				<div class="box">
+					<img src="../img/re/ernie-vilg1 (7).png">
+					<span>毁灭？？？</span>
+				</div>
+			</div>
+	     </div>		    
+		</div>
+		<!--走进人工智能结束-->	
+	</div>
+	<!--主体结束-->
+	
+	<div id=footer>
+		联系邮箱：2476823015@qq.com<br>
+		作者：@20201111111
+	</div>
+</body>
+</html>
